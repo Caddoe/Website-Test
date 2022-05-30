@@ -30,7 +30,7 @@
  let Update = document.getElementById("Update");
  let Delete = document.getElementById("Delete");
 
- async function AddDocument_CustomID(){
+ async function customid(){
      var ref = doc(db, "NamesList", "16");
 
      const docRef = await setDoc(
@@ -57,7 +57,7 @@
      }
  }
 
- Upload.addEventListener("click", AddDocument_CustomID);
+ Upload.addEventListener("click", customid);
  Retrieve.addEventListener("click", getADocument);
  Update.addEventListener("click");
  Delete.addEventListener("click");
